@@ -2,10 +2,14 @@ Get OpenStack Credentials
 ------
 * Get an openstack user name and password. Talk to IT.
 
-* Once you get creds copy over keystone_auth-dist to keystone_auth and enter in your credentials
+* Once you get creds copy over keystone_auth-dist to keystone_auth
 
 ::
     cp keystone_auth-dist keystone_auth
+
+* Update the credentials in the auth file
+
+::
     $EDITOR keystone_auth
 
 * Make sure you can loggin to keystone.
