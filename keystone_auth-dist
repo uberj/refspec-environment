@@ -1,0 +1,5 @@
+export OS_USERNAME=dpaste
+export OS_TENANT_NAME=dpaste
+export OS_PASSWORD=abc123
+export OS_AUTH_URL=http://10.248.24.40:5000/v2.0/
+#export PS1='[\u@\h \W(keystone_auth)]\$ '
