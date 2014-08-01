@@ -30,7 +30,7 @@ Upload you SSH key
 nova keypair-add --pub-key ~/.ssh/id_rsa.pub $(whoami)-key
 ```
 
-Down load a heat template
+Download a heat template
 
 ```
 wget https://raw.githubusercontent.com/uberj/dpaste/master/dpaste-new-neutron-env.yaml
