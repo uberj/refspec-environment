@@ -53,3 +53,8 @@ Wait for your stack to be created
 ```
     watch -n 0.5 heat stack-list
 ```
+
+When the stack says ``CREATE_COMPLETE`` point your browser at the web node. Its ip should be the output of the following command:
+```
+nova list | grep web | awk '{print (3}')
+```
