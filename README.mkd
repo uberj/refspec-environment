@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/uberj/dpaste/master/dpaste-new-neutron-en
 Figure out the UUID of the public network
 
 ```
-neutron net-show public | grep ' id ' | awk '{print $3}'
+nova network-show public| grep ' id ' | awk '{print $4}'
 ```
 
 Tell OpenStack to create a stack
