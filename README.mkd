@@ -1,5 +1,5 @@
-Get OpenStack Credentials
-------
+Getting Started With the Ref Spec
+---------------------------------
 Get an openstack user name and password. Talk to IT.
 
 Once you get creds copy over keystone\_auth-dist to keystone\_auth
