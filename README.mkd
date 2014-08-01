@@ -56,5 +56,5 @@ Wait for your stack to be created
 
 When the stack says ``CREATE_COMPLETE`` point your browser at the web node. Its ip should be the output of the following command:
 ```
-nova list | grep web | awk '{print (3}')
+nova list | grep web | awk '{print $13}'
 ```
