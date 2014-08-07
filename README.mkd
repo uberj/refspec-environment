@@ -1,6 +1,6 @@
 Getting Started With the Ref Spec
 ---------------------------------
-Get an openstack user name and password. Talk to IT.
+Get an openstack user name and password. Talk jd, gozer, or uberj in #webops (or #it).
 
 Once you get creds copy over keystone\_auth-dist to keystone\_auth
 
@@ -8,23 +8,32 @@ Once you get creds copy over keystone\_auth-dist to keystone\_auth
 cp keystone_auth-dist keystone_auth
 ```
 
-Update the credentials in the auth file
+Update the credentials in the auth file:
 
 ```
 $EDITOR keystone_auth
 ```
 
-Make sure you can loggin to keystone.
+Make sure you can loggin to keystone by requesting an auth token:
+
+```
+keystone token-get --wrap $(($COLUMNS-20))
+```
+
+If don't see a ``HTTP 401`` you are setup correctly.
 
 Install and activate a python virtualenv
 
-Install OpenStack CLIs
+    A virtualenv is suggested but not required. See http://virtualenvwrapper.readthedocs.org/en/latest/ for more info on setting up a virtualenv.
+
+Install the OpenStack CLIs
 
 ```
 pip install -r requirements.txt
 ```
+_Note: you might need to install ``libxml2-devel`` and ``libxslt-devel``_ 
 
-Upload you SSH key
+Upload your SSH key
 
 ```
 nova keypair-add --pub-key ~/.ssh/id_rsa.pub $(whoami)-key
