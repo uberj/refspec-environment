@@ -24,7 +24,7 @@ If don't see a ``HTTP 401`` you are setup correctly.
 
 Install and activate a python virtualenv
 
-    A virtualenv is suggested but not required. See http://virtualenvwrapper.readthedocs.org/en/latest/ for more info on setting up a virtualenv.
+_A virtualenv is suggested but not required. See http://virtualenvwrapper.readthedocs.org/en/latest/ for more info on setting up a virtualenv._
 
 Install the OpenStack CLIs
 
