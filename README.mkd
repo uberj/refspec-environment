@@ -60,7 +60,7 @@ heat stack-create dpaste -r --template-file=dpaste-new-neutron-env.yaml --parame
 Wait for your stack to be created
 
 ```
-watch -n 0.5 heat stack-list
+atch -n 0.2 "heat stack-list && nova list"
 ```
 
 When the stack says ``CREATE_COMPLETE`` point your browser at the web node. Its ip should be the output of the following command:
